@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { AppLayout } from './containers/AppLayout/AppLayout';
+import { Route, Switch } from 'react-router-dom';
+import Dashboard from './page/Dashboard';
+import Pelanggan from './page/Pelanggan';
+import { PageNotFound } from './page/404';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return(
+      <AppLayout>
+        <Switch>
+          <Route path='/' exact={true} component={Dashboard} />
+          <Route path='/dashboard' component={Dashboard} />
+          <Route path='/pelanggan' component={Pelanggan} />
+          <Route path='*' component={PageNotFound} />
+        </Switch>
+      </AppLayout>
+    )
+  }
 }
 
 export default App;

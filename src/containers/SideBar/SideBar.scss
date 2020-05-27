@@ -1,0 +1,28 @@
+@import '../../styles/shared.scss';
+
+.ui.menu.fixed.side-nav {
+  background-color: $secondary;
+  margin-top: 64px;
+  overflow-y: auto;
+  padding-bottom: 64px;
+
+  .sidebar-item:hover {
+    background: $secondary-hover;
+  }
+}
+
+.side-nav.ui.vertical.menu {
+  width: 17rem;
+}
+
+.actived{
+  span{
+    font-weight: 600;
+    color: $red;
+  }
+  .item.sidebar-item{
+    i.icon{
+      color: #ff0002;
+    }
+  }
+}

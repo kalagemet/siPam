@@ -1,0 +1,28 @@
+@import '../../styles/shared.scss';
+
+.ui.menu.top-menu {
+    border: none;
+    background-color: $primary;
+    
+    .logo {
+        width: 17rem;
+    }
+    
+    .nav-container {
+        flex-grow: 1;
+        padding: 0;
+
+        .search-input {
+            padding-left: 0;
+            width: 33%;
+
+            form {
+                width: 100%;
+            }
+        }
+    }
+
+    .header-icon {
+        color: $icon;
+    }
+}

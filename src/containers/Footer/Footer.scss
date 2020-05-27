@@ -1,0 +1,18 @@
+@import '../../styles/shared.scss';
+
+.footer{
+    width: calc(100% - #{$sidebar-left-width});
+    margin: 0;
+    margin-left: $sidebar-left-width;
+    height: $footer-height;
+    text-align: center;
+    background-color: $dark;
+    color: white;
+    bottom: 0;
+    position: relative;
+}
+
+.footer-title{
+    padding-top: calc(#{$footer-height} / 100 * 20);
+    font-style: italic;
+}

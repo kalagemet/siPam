@@ -1,0 +1,27 @@
+.login-container{
+    height : 102vh;
+    background: linear-gradient(-75deg,#268568, #0973ca);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+.login-header.icon {
+    color: #1cc0b8;
+
+    &:after{
+        color: #0973ca;
+        animation: precentage 4s linear infinite ;
+    }
+}
+
+@keyframes gradient {
+	0% {
+        background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
